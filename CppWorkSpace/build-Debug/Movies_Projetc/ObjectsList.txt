@@ -1,0 +1,1 @@
+../build-Debug/Movies_Projetc/Movie.cpp.o ../build-Debug/Movies_Projetc/main.cpp.o ../build-Debug/Movies_Projetc/Movies.cpp.o   

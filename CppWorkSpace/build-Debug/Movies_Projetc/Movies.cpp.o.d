@@ -1,0 +1,5 @@
+../build-Debug/Movies_Projetc/Movies.cpp.o: Movies.cpp Movies.h Movie.h
+
+Movies.h:
+
+Movie.h:

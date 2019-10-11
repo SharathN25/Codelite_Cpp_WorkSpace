@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CppWorkSpace" Database="" Version="10.0.0">
+  <Project Name="CppSourceCode" Path="CppSourceCode/CppSourceCode.project" Active="No"/>
+  <Project Name="Movies_Projetc" Path="Movies_Projetc/Movies_Projetc.project" Active="No"/>
+  <Project Name="Mystring_Project" Path="Mystring_Project/Mystring_Project.project" Active="No"/>
+  <Project Name="Mystring_Project" Path="Mystring_Project/Mystring_Project.project" Active="No"/>
+  <Project Name="Mystring_AssignmentOperator" Path="Mystring_AssignmentOperator/Mystring_AssignmentOperator.project" Active="No"/>
+  <Project Name="Mystring_Operator_Methods" Path="Mystring_Operator_Methods/Mystring_Operator_Methods.project" Active="No"/>
+  <Project Name="Mystring_Nonmember_Op_overload" Path="Mystring_Nonmember_Op_overload/Mystring_Nonmember_Op_overload.project" Active="No"/>
+  <Project Name="Mystring-insertion-extraction" Path="Mystring-insertion-extraction/Mystring-insertion-extraction.project" Active="No"/>
+  <Project Name="Deriving_First_Class_Inheritance" Path="Deriving_First_Class_Inheritance/Deriving_First_Class_Inheritance.project" Active="No"/>
+  <Project Name="ProtectedMemember_Public_Inheritance" Path="ProtectedMemember_Public_Inheritance/ProtectedMemember_Public_Inheritance.project" Active="No"/>
+  <Project Name="Constructor_Destructors_In_Inheritance" Path="Constructor_Destructors_In_Inheritance/Constructor_Destructors_In_Inheritance.project" Active="No"/>
+  <Project Name="Passing_Args_To_BaseClass_Constructors" Path="Passing_Args_To_BaseClass_Constructors/Passing_Args_To_BaseClass_Constructors.project" Active="No"/>
+  <Project Name="Inheritance_CopyCon_Assignment_Operators" Path="Inheritance_CopyCon_Assignment_Operators/Inheritance_CopyCon_Assignment_Operators.project" Active="No"/>
+  <Project Name="RedefiningBaseClassMethod" Path="RedefiningBaseClassMethod/RedefiningBaseClassMethod.project" Active="No"/>
+  <Project Name="StaticBinding" Path="StaticBinding/StaticBinding.project" Active="No"/>
+  <Project Name="VirtualFunction" Path="VirtualFunction/VirtualFunction.project" Active="No"/>
+  <Project Name="Virtual_Destructors" Path="Virtual_Destructors/Virtual_Destructors.project" Active="No"/>
+  <Project Name="UsingOverride" Path="UsingOverride/UsingOverride.project" Active="No"/>
+  <Project Name="BaseClassRef_DynamicPoly" Path="BaseClassRef_DynamicPoly/BaseClassRef_DynamicPoly.project" Active="No"/>
+  <Project Name="PureVirtualFunctions" Path="PureVirtualFunctions/PureVirtualFunctions.project" Active="No"/>
+  <Project Name="Interface_Start" Path="Interface_Start/Interface_Start.project" Active="No"/>
+  <Project Name="Interface_Complete" Path="Interface_Complete/Interface_Complete.project" Active="No"/>
+  <Project Name="UniquePointers" Path="UniquePointers/UniquePointers.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="CppSourceCode" ConfigName="Debug"/>
+      <Project Name="Movies_Projetc" ConfigName="Debug"/>
+      <Project Name="Mystring_Project" ConfigName="Debug"/>
+      <Project Name="Mystring_Project" ConfigName="Debug"/>
+      <Project Name="Mystring_Project" ConfigName="Debug"/>
+      <Project Name="Mystring-Copy-Assignment" ConfigName="Debug"/>
+      <Project Name="Mystring_AssignmentOperator" ConfigName="Debug"/>
+      <Project Name="Mystring_Operator_Methods" ConfigName="Debug"/>
+      <Project Name="Mystring_Nonmember_Op_overload" ConfigName="Debug"/>
+      <Project Name="Mystring-insertion-extraction" ConfigName="Debug"/>
+      <Project Name="Deriving_First_Class_Inheritance" ConfigName="Debug"/>
+      <Project Name="ProtectedMemember_Public_Inheritance" ConfigName="Debug"/>
+      <Project Name="Constructor_Destructors_In_Inheritance" ConfigName="Debug"/>
+      <Project Name="Passing_Args_To_BaseClass_Constructors" ConfigName="Debug"/>
+      <Project Name="Inheritance_CopyCon_Assignment_Operators" ConfigName="Debug"/>
+      <Project Name="RedefiningBaseClassMethod" ConfigName="Debug"/>
+      <Project Name="StaticBinding" ConfigName="Debug"/>
+      <Project Name="VirtualFunction" ConfigName="Debug"/>
+      <Project Name="Virtual_Destructors" ConfigName="Debug"/>
+      <Project Name="UsingOverride" ConfigName="Debug"/>
+      <Project Name="BaseClassRef_DynamicPoly" ConfigName="Debug"/>
+      <Project Name="PureVirtualFunctions" ConfigName="Debug"/>
+      <Project Name="Interface_Start" ConfigName="Debug"/>
+      <Project Name="Interface_Complete" ConfigName="Debug"/>
+      <Project Name="UniquePointers" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="CppSourceCode" ConfigName="Release"/>
+      <Project Name="Movies_Projetc" ConfigName="Release"/>
+      <Project Name="Mystring_Project" ConfigName="Release"/>
+      <Project Name="Mystring_Project" ConfigName="Release"/>
+      <Project Name="Mystring_Project" ConfigName="Release"/>
+      <Project Name="Mystring-Copy-Assignment" ConfigName="Release"/>
+      <Project Name="Mystring_AssignmentOperator" ConfigName="Release"/>
+      <Project Name="Mystring_Operator_Methods" ConfigName="Release"/>
+      <Project Name="Mystring_Nonmember_Op_overload" ConfigName="Release"/>
+      <Project Name="Mystring-insertion-extraction" ConfigName="Release"/>
+      <Project Name="Deriving_First_Class_Inheritance" ConfigName="Release"/>
+      <Project Name="ProtectedMemember_Public_Inheritance" ConfigName="Release"/>
+      <Project Name="Constructor_Destructors_In_Inheritance" ConfigName="Release"/>
+      <Project Name="Passing_Args_To_BaseClass_Constructors" ConfigName="Release"/>
+      <Project Name="Inheritance_CopyCon_Assignment_Operators" ConfigName="Release"/>
+      <Project Name="RedefiningBaseClassMethod" ConfigName="Release"/>
+      <Project Name="StaticBinding" ConfigName="Release"/>
+      <Project Name="VirtualFunction" ConfigName="Release"/>
+      <Project Name="Virtual_Destructors" ConfigName="Release"/>
+      <Project Name="UsingOverride" ConfigName="Release"/>
+      <Project Name="BaseClassRef_DynamicPoly" ConfigName="Release"/>
+      <Project Name="PureVirtualFunctions" ConfigName="Release"/>
+      <Project Name="Interface_Start" ConfigName="Release"/>
+      <Project Name="Interface_Complete" ConfigName="Release"/>
+      <Project Name="UniquePointers" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
