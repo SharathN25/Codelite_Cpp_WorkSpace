@@ -1,2 +1,2 @@
 # Codelite_Cpp_WorkSpace
-C++ workspace of Codelite IDE. 
+Codelite IDE C++ Workspace. (Backup of all C++ practice projects)
