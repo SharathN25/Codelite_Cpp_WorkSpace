@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Constructor_Destructors_In_Inheritance
 ConfigurationName      :=Debug
-WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace
-ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Constructor_Destructors_In_Inheritance
+WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace
+ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Constructor_Destructors_In_Inheritance
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=154501
-Date                   :=01/10/2019
+Date                   :=06/11/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Constructor_Destructors_In_Inheritance/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Constructor_Destructors_In_Inheritance/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

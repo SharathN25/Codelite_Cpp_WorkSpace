@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Mystring_Operator_Methods
 ConfigurationName      :=Debug
-WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace
-ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Mystring_Operator_Methods
+WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace
+ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Mystring_Operator_Methods
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=154501
-Date                   :=24/09/2019
+Date                   :=05/11/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) 
 
 
 
@@ -93,17 +93,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix): Mystring.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Mystring.cpp$(DependSuffix) -MM Mystring.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Mystring_Operator_Methods/Mystring.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix): Mystring.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix) Mystring.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Mystring_Operator_Methods/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Mystring_Operator_Methods/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix): Mystring.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Mystring.cpp$(DependSuffix) -MM Mystring.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Mystring_Operator_Methods/Mystring.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix): Mystring.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix) Mystring.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

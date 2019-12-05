@@ -22,7 +22,27 @@
   <Project Name="PureVirtualFunctions" Path="PureVirtualFunctions/PureVirtualFunctions.project" Active="No"/>
   <Project Name="Interface_Start" Path="Interface_Start/Interface_Start.project" Active="No"/>
   <Project Name="Interface_Complete" Path="Interface_Complete/Interface_Complete.project" Active="No"/>
-  <Project Name="UniquePointers" Path="UniquePointers/UniquePointers.project" Active="Yes"/>
+  <Project Name="UniquePointers" Path="UniquePointers/UniquePointers.project" Active="No"/>
+  <Project Name="SharedPointers" Path="SharedPointers/SharedPointers.project" Active="No"/>
+  <Project Name="WeakPointers" Path="WeakPointers/WeakPointers.project" Active="No"/>
+  <Project Name="Test" Path="Test/Test.project" Active="No"/>
+  <Project Name="Custom_Deleters" Path="Custom_Deleters/Custom_Deleters.project" Active="No"/>
+  <Project Name="ExceptionHandling" Path="ExceptionHandling/ExceptionHandling.project" Active="No"/>
+  <Project Name="MPGException" Path="MPGException/MPGException.project" Active="No"/>
+  <Project Name="MPGfunction" Path="MPGfunction/MPGfunction.project" Active="No"/>
+  <Project Name="MPGfunction_MultiExceptions" Path="MPGfunction_MultiExceptions/MPGfunction_MultiExceptions.project" Active="No"/>
+  <Project Name="MPG_ExceptionClasses" Path="MPG_ExceptionClasses/MPG_ExceptionClasses.project" Active="No"/>
+  <Project Name="FormatManipulators" Path="FormatManipulators/FormatManipulators.project" Active="No"/>
+  <Project Name="DataStructure" Path="DataStructure/DataStructure.project" Active="No"/>
+  <Project Name="STL_basic_examples" Path="STL_basic_examples/STL_basic_examples.project" Active="No"/>
+  <Project Name="Function_Template" Path="Function Template/Function Template.project" Active="No"/>
+  <Project Name="Class_Template" Path="Class_Template/Class_Template.project" Active="No"/>
+  <Project Name="ClassTemplateArray" Path="ClassTemplateArray/ClassTemplateArray.project" Active="No"/>
+  <Project Name="STL_Iterators_Demo" Path="STL_Iterators_Demo/STL_Iterators_Demo.project" Active="No"/>
+  <Project Name="STL_Algorithms" Path="STL_Algorithms/STL_Algorithms.project" Active="No"/>
+  <Project Name="Std_Array" Path="Std_Array/Std_Array.project" Active="No"/>
+  <Project Name="vector" Path="vector/vector.project" Active="No"/>
+  <Project Name="STL_deque" Path="STL_deque/STL_deque.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -51,6 +71,26 @@
       <Project Name="Interface_Start" ConfigName="Debug"/>
       <Project Name="Interface_Complete" ConfigName="Debug"/>
       <Project Name="UniquePointers" ConfigName="Debug"/>
+      <Project Name="SharedPointers" ConfigName="Debug"/>
+      <Project Name="WeakPointers" ConfigName="Debug"/>
+      <Project Name="Test" ConfigName="Debug"/>
+      <Project Name="Custom_Deleters" ConfigName="Debug"/>
+      <Project Name="ExceptionHandling" ConfigName="Debug"/>
+      <Project Name="MPGException" ConfigName="Debug"/>
+      <Project Name="MPGfunction" ConfigName="Debug"/>
+      <Project Name="MPGfunction_MultiExceptions" ConfigName="Debug"/>
+      <Project Name="MPG_ExceptionClasses" ConfigName="Debug"/>
+      <Project Name="FormatManipulators" ConfigName="Debug"/>
+      <Project Name="DataStructure" ConfigName="Debug"/>
+      <Project Name="STL_basic_examples" ConfigName="Debug"/>
+      <Project Name="Function_Template" ConfigName="Debug"/>
+      <Project Name="Class_Template" ConfigName="Debug"/>
+      <Project Name="ClassTemplateArray" ConfigName="Debug"/>
+      <Project Name="STL_Iterators_Demo" ConfigName="Debug"/>
+      <Project Name="STL_Algorithms" ConfigName="Debug"/>
+      <Project Name="Std_Array" ConfigName="Debug"/>
+      <Project Name="vector" ConfigName="Debug"/>
+      <Project Name="STL_deque" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -79,6 +119,26 @@
       <Project Name="Interface_Start" ConfigName="Release"/>
       <Project Name="Interface_Complete" ConfigName="Release"/>
       <Project Name="UniquePointers" ConfigName="Release"/>
+      <Project Name="SharedPointers" ConfigName="Release"/>
+      <Project Name="WeakPointers" ConfigName="Release"/>
+      <Project Name="Test" ConfigName="Release"/>
+      <Project Name="Custom_Deleters" ConfigName="Release"/>
+      <Project Name="ExceptionHandling" ConfigName="Release"/>
+      <Project Name="MPGException" ConfigName="Release"/>
+      <Project Name="MPGfunction" ConfigName="Release"/>
+      <Project Name="MPGfunction_MultiExceptions" ConfigName="Release"/>
+      <Project Name="MPG_ExceptionClasses" ConfigName="Release"/>
+      <Project Name="FormatManipulators" ConfigName="Release"/>
+      <Project Name="DataStructure" ConfigName="Release"/>
+      <Project Name="STL_basic_examples" ConfigName="Release"/>
+      <Project Name="Function_Template" ConfigName="Release"/>
+      <Project Name="Class_Template" ConfigName="Release"/>
+      <Project Name="ClassTemplateArray" ConfigName="Release"/>
+      <Project Name="STL_Iterators_Demo" ConfigName="Release"/>
+      <Project Name="STL_Algorithms" ConfigName="Release"/>
+      <Project Name="Std_Array" ConfigName="Release"/>
+      <Project Name="vector" ConfigName="Release"/>
+      <Project Name="STL_deque" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

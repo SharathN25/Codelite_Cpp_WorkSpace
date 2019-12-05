@@ -4,6 +4,6 @@
 -Ic:\MinGW\lib\gcc\mingw32\8.2.0\include
 -Ic:\MinGW\include
 -Ic:\MinGW\lib\gcc\mingw32\8.2.0\include-fixed
--ID:\Sharath\CodLiteWorkSpace\Cpp\CppWorkSpace\PureVirtualFunctions
+-ID:\Sharath\CodLiteWorkSpace\Cpp\Codelite_Cpp_WorkSpace\CppWorkSpace\PureVirtualFunctions
 -target
 x86_64-pc-windows-gnu

@@ -73,9 +73,9 @@ class Derived:public Base
 
 int main(void)
 {
-    //Base b{100}; //overloaded constructors
-    //Base b1 {b} ; //Copy constructor
-    //b = b1; //Copy assignment
+    Base b{100}; //overloaded constructors
+    Base b1 {b} ; //Copy constructor
+    b = b1; //Copy assignment
     Derived d{200};
     Derived d1{d};
     d = d1;
