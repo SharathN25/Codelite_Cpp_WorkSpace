@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=154501
-Date                   :=25/11/2019
+Date                   :=25/02/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/test1.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/test_test.cpp$(ObjectSuffix) 
 
 
 
@@ -93,11 +93,11 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/test1.cpp$(ObjectSuffix): test1.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/test1.cpp$(DependSuffix) -MM test1.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Test/test1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test1.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/test1.cpp$(PreprocessSuffix): test1.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test1.cpp$(PreprocessSuffix) test1.cpp
+$(IntermediateDirectory)/test_test.cpp$(ObjectSuffix): test_test.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_test.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/test_test.cpp$(DependSuffix) -MM test_test.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Test/test_test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_test.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/test_test.cpp$(PreprocessSuffix): test_test.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_test.cpp$(PreprocessSuffix) test_test.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

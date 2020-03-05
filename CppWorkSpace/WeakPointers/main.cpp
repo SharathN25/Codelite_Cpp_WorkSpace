@@ -36,8 +36,12 @@ public:
 int main(void)
 {
     shared_ptr<A> a = make_shared<A>();
+    std::cout<<a.use_count()<<std::endl;
     shared_ptr<B> b = make_shared<B>();
+    std::cout<<b.use_count()<<std::endl;
     a->set_B(b);
     b->set_A(a);
+    std::cout<<a.use_count()<<std::endl;
+    std::cout<<b.use_count()<<std::endl;
     return 0;
 }

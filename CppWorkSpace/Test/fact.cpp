@@ -1,8 +1,8 @@
 #include <iostream>
 #include <climits>
 #include <vector>
-using namespace std;
 
+using namespace std;
 int main(void)
 {
     vector<int> int_sequence (10,3);

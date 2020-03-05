@@ -4,21 +4,25 @@
   <wxString Value="D:\Sharath\CodLiteWorkSpace\Cpp\Codelite_Cpp_WorkSpace\CppWorkSpace\CppWorkSpace.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\Sharath\CodLiteWorkSpace\Cpp\Codelite_Cpp_WorkSpace\CppWorkSpace\vector\main.cpp" Name="FileName"/>
-      <int Value="83" Name="FirstVisibleLine"/>
-      <int Value="221" Name="CurrentLine"/>
+      <wxString Value="D:\Sharath\CodLiteWorkSpace\Cpp\Codelite_Cpp_WorkSpace\CppWorkSpace\Test\test_test.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="11" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds">
-        <IntVectorItem Value="52"/>
-        <IntVectorItem Value="67"/>
-        <IntVectorItem Value="97"/>
-        <IntVectorItem Value="108"/>
-        <IntVectorItem Value="123"/>
-        <IntVectorItem Value="125"/>
-        <IntVectorItem Value="142"/>
-        <IntVectorItem Value="171"/>
-        <IntVectorItem Value="195"/>
-      </IntVector>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\Sharath\CodLiteWorkSpace\Cpp\Codelite_Cpp_WorkSpace\CppWorkSpace\Mystring_Project\Mystring.cpp" Name="FileName"/>
+      <int Value="60" Name="FirstVisibleLine"/>
+      <int Value="60" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\Sharath\CodLiteWorkSpace\Cpp\Codelite_Cpp_WorkSpace\CppWorkSpace\STL_Sets\main.cpp" Name="FileName"/>
+      <int Value="49" Name="FirstVisibleLine"/>
+      <int Value="50" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
     </TabInfo>
   </TabInfoArray>
   <SerializedObject Name="m_breakpoints">

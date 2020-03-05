@@ -5,16 +5,15 @@
 ## Debug
 ProjectName            :=Movies_Projetc
 ConfigurationName      :=Debug
-WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace
-ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Movies_Projetc
-IntermediateDirectory  :=../build-$(ConfigurationName)/Movies_Projetc
-OutDir                 :=../build-$(ConfigurationName)/Movies_Projetc
+WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace
+ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Movies_Projetc
+IntermediateDirectory  :=./Debug
+OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=154501
-Date                   :=20/09/2019
+Date                   :=20/01/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -28,13 +27,14 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
-OutputFile             :=..\build-$(ConfigurationName)\bin\$(ProjectName)
+OutputFile             :=$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :=$(IntermediateDirectory)/ObjectsList.txt
+ObjectsFileList        :="Movies_Projetc.txt"
 PCHCompileFlags        :=
+MakeDirCommand         :=makedir
 RcCmpOptions           := 
 RcCompilerName         :=C:/MinGW/bin/windres.exe
 LinkOptions            :=  
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(ObjectSuffix) ../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(ObjectSuffix) ../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) $(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) 
 
 
 
@@ -72,20 +72,20 @@ Objects=$(Objects0)
 ## Main Build Targets 
 ##
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
-all: MakeIntermediateDirs $(OutputFile)
+all: $(OutputFile)
 
-$(OutputFile): ../build-$(ConfigurationName)/Movies_Projetc/.d $(Objects) 
-	@if not exist "..\build-$(ConfigurationName)\Movies_Projetc" mkdir "..\build-$(ConfigurationName)\Movies_Projetc"
+$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
+	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@if not exist "..\build-$(ConfigurationName)\Movies_Projetc" mkdir "..\build-$(ConfigurationName)\Movies_Projetc"
-	@if not exist ""..\build-$(ConfigurationName)\bin"" mkdir ""..\build-$(ConfigurationName)\bin""
+	@$(MakeDirCommand) "./Debug"
 
-../build-$(ConfigurationName)/Movies_Projetc/.d:
-	@if not exist "..\build-$(ConfigurationName)\Movies_Projetc" mkdir "..\build-$(ConfigurationName)\Movies_Projetc"
+
+$(IntermediateDirectory)/.d:
+	@$(MakeDirCommand) "./Debug"
 
 PreBuild:
 
@@ -93,36 +93,30 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(ObjectSuffix): Movie.cpp ../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Movies_Projetc/Movie.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(DependSuffix): Movie.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(DependSuffix) -MM Movie.cpp
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Movies_Projetc/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
-../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(PreprocessSuffix): Movie.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Movies_Projetc/Movie.cpp$(PreprocessSuffix) Movie.cpp
+$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix): Movie.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Movie.cpp$(DependSuffix) -MM Movie.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Movies_Projetc/Movie.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movie.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Movie.cpp$(PreprocessSuffix): Movie.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Movie.cpp$(PreprocessSuffix) Movie.cpp
 
-../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Movies_Projetc/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(DependSuffix) -MM main.cpp
-
-../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Movies_Projetc/main.cpp$(PreprocessSuffix) main.cpp
-
-../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(ObjectSuffix): Movies.cpp ../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Movies_Projetc/Movies.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(DependSuffix): Movies.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(DependSuffix) -MM Movies.cpp
-
-../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(PreprocessSuffix): Movies.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/Movies_Projetc/Movies.cpp$(PreprocessSuffix) Movies.cpp
+$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix): Movies.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Movies.cpp$(DependSuffix) -MM Movies.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Movies_Projetc/Movies.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Movies.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Movies.cpp$(PreprocessSuffix): Movies.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Movies.cpp$(PreprocessSuffix) Movies.cpp
 
 
--include ../build-$(ConfigurationName)/Movies_Projetc//*$(DependSuffix)
+-include $(IntermediateDirectory)/*$(DependSuffix)
 ##
 ## Clean
 ##
 clean:
-	$(RM) -r $(IntermediateDirectory)
+	$(RM) -r ./Debug/
 
 

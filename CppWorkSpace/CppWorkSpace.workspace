@@ -25,7 +25,7 @@
   <Project Name="UniquePointers" Path="UniquePointers/UniquePointers.project" Active="No"/>
   <Project Name="SharedPointers" Path="SharedPointers/SharedPointers.project" Active="No"/>
   <Project Name="WeakPointers" Path="WeakPointers/WeakPointers.project" Active="No"/>
-  <Project Name="Test" Path="Test/Test.project" Active="No"/>
+  <Project Name="Test" Path="Test/Test.project" Active="Yes"/>
   <Project Name="Custom_Deleters" Path="Custom_Deleters/Custom_Deleters.project" Active="No"/>
   <Project Name="ExceptionHandling" Path="ExceptionHandling/ExceptionHandling.project" Active="No"/>
   <Project Name="MPGException" Path="MPGException/MPGException.project" Active="No"/>
@@ -42,7 +42,13 @@
   <Project Name="STL_Algorithms" Path="STL_Algorithms/STL_Algorithms.project" Active="No"/>
   <Project Name="Std_Array" Path="Std_Array/Std_Array.project" Active="No"/>
   <Project Name="vector" Path="vector/vector.project" Active="No"/>
-  <Project Name="STL_deque" Path="STL_deque/STL_deque.project" Active="Yes"/>
+  <Project Name="STL_deque" Path="STL_deque/STL_deque.project" Active="No"/>
+  <Project Name="STL_List" Path="STL_List/STL_List.project" Active="No"/>
+  <Project Name="STL_Sets" Path="STL_Sets/STL_Sets.project" Active="No"/>
+  <Project Name="STL_Maps" Path="STL_Maps/STL_Maps.project" Active="No"/>
+  <Project Name="STL_Stack" Path="STL_Stack/STL_Stack.project" Active="No"/>
+  <Project Name="STL_Queue" Path="STL_Queue/STL_Queue.project" Active="No"/>
+  <Project Name="STL_Priority_Queue" Path="STL_Priority_Queue/STL_Priority_Queue.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -91,6 +97,12 @@
       <Project Name="Std_Array" ConfigName="Debug"/>
       <Project Name="vector" ConfigName="Debug"/>
       <Project Name="STL_deque" ConfigName="Debug"/>
+      <Project Name="STL_List" ConfigName="Debug"/>
+      <Project Name="STL_Sets" ConfigName="Debug"/>
+      <Project Name="STL_Maps" ConfigName="Debug"/>
+      <Project Name="STL_Stack" ConfigName="Debug"/>
+      <Project Name="STL_Queue" ConfigName="Debug"/>
+      <Project Name="STL_Priority_Queue" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -139,6 +151,12 @@
       <Project Name="Std_Array" ConfigName="Release"/>
       <Project Name="vector" ConfigName="Release"/>
       <Project Name="STL_deque" ConfigName="Release"/>
+      <Project Name="STL_List" ConfigName="Release"/>
+      <Project Name="STL_Sets" ConfigName="Release"/>
+      <Project Name="STL_Maps" ConfigName="Release"/>
+      <Project Name="STL_Stack" ConfigName="Release"/>
+      <Project Name="STL_Queue" ConfigName="Release"/>
+      <Project Name="STL_Priority_Queue" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

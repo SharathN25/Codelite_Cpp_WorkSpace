@@ -8,7 +8,8 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
-    <File Name="test1.cpp"/>
+    <File Name="test_test.cpp"/>
+    <File Name="test1.cpp" ExcludeProjConfig="Debug;"/>
     <File Name="cppString.cpp" ExcludeProjConfig="Debug;"/>
     <File Name="cchar.cpp" ExcludeProjConfig="Debug;"/>
     <File Name="fact.cpp" ExcludeProjConfig="Debug;"/>

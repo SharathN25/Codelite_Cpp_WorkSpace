@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Mystring_AssignmentOperator
 ConfigurationName      :=Debug
-WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace
-ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Mystring_AssignmentOperator
+WorkspacePath          :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace
+ProjectPath            :=D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Mystring_AssignmentOperator
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=154501
-Date                   :=23/09/2019
+Date                   :=08/01/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Mystring_AssignmentOperator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Mystring_AssignmentOperator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
 $(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix): Mystring.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Mystring.cpp$(DependSuffix) -MM Mystring.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/CppWorkSpace/Mystring_AssignmentOperator/Mystring.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Sharath/CodLiteWorkSpace/Cpp/Codelite_Cpp_WorkSpace/CppWorkSpace/Mystring_AssignmentOperator/Mystring.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix): Mystring.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix) Mystring.cpp
 
